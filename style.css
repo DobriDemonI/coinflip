@@ -20,6 +20,7 @@ body {
     height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;
     background: #0B0B0F;
     font-family: 'Inter', sans-serif;
+    
 }
 
 body.lock {
@@ -899,6 +900,9 @@ tr:last-child td {
   
   /* xs (<=575px) */
   @media (max-width: 575px) {
+    body {
+        overflow: auto;
+    }
     td.currencies__graph, td.currencies__name  {
         display: none;
         visibility: hidden;
@@ -946,6 +950,12 @@ tr:last-child td {
     }
     .currencies__table td {
         padding: 12px 12px;
+    }
+    .newsletter__btn {
+        border: 1px solid#933FFE;
+        border-radius: 4px;
+        background: none;
+        background-size: auto;
     }
   }
 /*------------------*/
